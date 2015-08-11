@@ -5,10 +5,21 @@
 	<title></title>
 </head>
 <body>
-	<h1>JS写到html输出流中</h1>
-	<script>document.write("<h1>This is a heading</h1>");
-	document.write("<p>This is a paragraph</p>");
+	<script>
+	function changeImage(){
+		var oImage = document.getElementById('image');
+		switch ('oImage.src')
+		case("wangnima1.jpg"):
+			oImage.src='wangnima2.jpg';
+			break;
+		case("wangnima2.jpg"):
+			oImage.src = 'wangnima3.jpg';
+			break;
+		case('wangnima3.jpg'):
+			oImage.src = 'wangnima1.jpg';
+			break;
+	}
 	</script>
-	
+	<img id ="image" src = "wangnima1.jpg" onclick = "changeImage()"/>
 </body>
 </html>
